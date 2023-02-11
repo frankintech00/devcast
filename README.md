@@ -1,4 +1,4 @@
-Weather App
+DevCast
 
 A simple weather app built with React and styled with Tailwind CSS.
 Features
