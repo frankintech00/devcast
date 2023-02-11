@@ -43,8 +43,11 @@ function App() {
   return (
     <div className="w-3/5 h-full p-5 mx-auto bg-indigo-300 font-inter overflow-y">
       <h1 className="p-5 text-5xl font-semibold text-center text-white">
-        Weather App
+        DevCast Weather App
       </h1>
+      <h3 className="p-5 text-3xl font-semibold text-center text-white">
+        A simple weather app built for development purposes.
+      </h3>
       {/* Render the search component with onSearchChange prop */}
       <Search onSearchChange={handleOnSearchChange} />
       {/* Render weather and forecast components if data is available */}
