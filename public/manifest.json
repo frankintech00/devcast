@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dev Cast",
+  "name": "A simple weather forecasting site used for development purposes",
   "icons": [
     {
       "src": "favicon.ico",
