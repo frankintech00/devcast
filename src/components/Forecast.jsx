@@ -29,7 +29,7 @@ const Forecast = ({ data }) => {
 	return (
 		<div className='p-5'>
 			{/* Displays the label "Daily Forecast" */}
-			<label className='text-white'>Daily Forecast</label>
+			<label className='text-white'>Forecast for the next 7 days</label>
 			<Accordion allowZeroExpanded>
 				{/* Splices the first 7 items from the data list and maps through each item to render an AccordionItem component */}
 				{data.list.splice(0, 7).map((item, idx) => (
@@ -45,11 +45,11 @@ const Forecast = ({ data }) => {
 										alt='weather'
 									/>
 									{/* Displays the day of the forecast */}
-									<label className='flex-1 ml-3 font-bold text-gray-900 cursor-pointer'>
+									<label className='flex-1 ml-3 font-bold text-gray-800 cursor-pointer'>
 										{forecastDays[idx]}
 									</label>
 									{/* Displays the description of the weather */}
-									<label className='flex-1 mr-5 font-bold text-right text-gray-900 cursor-pointer'>
+									<label className='flex-1 mr-5 font-bold text-right text-gray-800 cursor-pointer'>
 										{item.weather[0].description}
 									</label>
 									{/* Displays the temperature range */}
@@ -66,35 +66,35 @@ const Forecast = ({ data }) => {
 								{/* Flexbox container for the weather information */}
 								<div className='flex items-center justify-start h-30'>
 									{/* Pressure label and value */}
-									<label className='mr-2 text-gray-700'>Pressure:</label>
-									<label className='text-gray-900'>{item.main.pressure}</label>
+									<label className='mr-2 text-gray-100'>Pressure:</label>
+									<label className='text-gray-100'>{item.main.pressure}</label>
 								</div>
 								<div className='flex items-center justify-start h-30'>
 									{/* Humidity label and value */}
-									<label className='mr-2 text-gray-700'>Humidity:</label>
-									<label className='text-gray-900'>{item.main.humidity}</label>
+									<label className='mr-2 text-gray-100'>Humidity:</label>
+									<label className='text-gray-100'>{item.main.humidity}</label>
 								</div>
 								<div className='flex items-center justify-start h-30'>
 									{/* Clouds label and value */}
-									<label className='mr-2 text-gray-700'>Clouds:</label>
-									<label className='text-gray-900'>{item.clouds.all}%</label>
+									<label className='mr-2 text-gray-100'>Clouds:</label>
+									<label className='text-gray-100'>{item.clouds.all}%</label>
 								</div>
 								<div className='flex items-center justify-start h-30'>
 									{/* Wind speed label and value */}
-									<label className='mr-2 text-gray-700'>Wind speed:</label>
-									<label className='text-gray-900'>{item.wind.speed} m/s</label>
+									<label className='mr-2 text-gray-100'>Wind speed:</label>
+									<label className='text-gray-100'>{item.wind.speed} m/s</label>
 								</div>
 								<div className='flex items-center justify-start h-30'>
 									{/* Sea level label and value */}
-									<label className='mr-2 text-gray-700'>Sea level:</label>
-									<label className='text-gray-900'>
+									<label className='mr-2 text-gray-100'>Sea level:</label>
+									<label className='text-gray-100'>
 										{item.main.sea_level}m
 									</label>
 								</div>
 								<div className='flex items-center justify-start h-30'>
 									{/* Feels like label and value */}
-									<label className='mr-2 text-gray-700'>Feels like:</label>
-									<label className='text-gray-900'>
+									<label className='mr-2 text-gray-100'>Feels like:</label>
+									<label className='text-gray-100'>
 										{item.main.feels_like}°C
 									</label>
 								</div>

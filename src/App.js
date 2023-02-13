@@ -41,18 +41,20 @@ function App() {
 
 	// Return the React component
 	return (
-		<div className='w-3/5 h-full p-5 mx-auto bg-indigo-300 font-inter overflow-y'>
-			<h1 className='p-5 text-5xl font-semibold text-center text-white'>
-				DevCast Weather App
-			</h1>
-			<h3 className='p-5 text-3xl font-semibold text-center text-white'>
-				A simple weather app built for development purposes.
-			</h3>
-			{/* Render the search component with onSearchChange prop */}
-			<Search onSearchChange={handleOnSearchChange} />
-			{/* Render weather and forecast components if data is available */}
-			{weather && <Current data={weather} />}
-			{forecast && <Forecast data={forecast} />}
+		<div class='min-h-screen bg-gray-900 bg-cover bg-no-repeat bg-center p-5'>
+			<div className='w-3/5 h-full p-5 mx-auto bg-gray-700 rounded-lg shadow-xl font-inter overflow-y'>
+				<h1 className='p-5 text-5xl font-semibold text-center text-white'>
+					DevCast Weather App
+				</h1>
+				<h3 className='p-5 text-3xl font-semibold text-center text-white'>
+					A simple weather app built for development purposes.
+				</h3>
+				{/* Render the search component with onSearchChange prop */}
+				<Search onSearchChange={handleOnSearchChange} />
+				{/* Render weather and forecast components if data is available */}
+				{weather && <Current data={weather} />}
+				{forecast && <Forecast data={forecast} />}
+			</div>
 		</div>
 	);
 }
